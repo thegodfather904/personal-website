@@ -1,3 +1,5 @@
+/*Create by Tony Scialo*/
+
 body{
 	margin: 0;
 	padding: 0;
@@ -78,7 +80,7 @@ html{
 	color: #fc6454;
 	display: inline-block;
 	width: 120px;
-	
+
 }
 
 .hidden-title-word{
@@ -445,7 +447,7 @@ html{
 	.name-container{
 		margin-left: 10%;
 	}
-	
+
 	.web-design-skills-container{
 		width: 100%;
 	}
@@ -462,7 +464,7 @@ html{
 		border-right: none;
 		height: auto;
 	}
-	
+
 	.web-design-skill-label{
 		text-align: center;
 		padding: 0 95px;
@@ -479,11 +481,11 @@ html{
 	.name{
 		font-size: 35px;
 	}
-	
+
 	.name-container{
 		padding-top: 110px;
 	}
-	
+
 	.web-design-skills{
 		height: 1550px;
 	}
@@ -497,16 +499,16 @@ html{
 	.name{
 		font-size: 24px;
 	}
-	
+
 	.menu-button{
 		margin-right: 10px;
 	}
-	
+
 	.web-design-skill-title{
 		height: auto;
 		padding: 0 20px;
 	}
-	
+
 	.web-design-skill-label{
 		padding: 0 20px;
 	}
@@ -535,4 +537,3 @@ html{
 .test-two{
 	background-image: url(http://a.espncdn.com/photo/2014/0527/mag_suarez02_aw_1600x900.jpg)
 }
-
