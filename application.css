@@ -513,27 +513,3 @@ html{
 		padding: 0 20px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.test-one, .test-two{
-	height: 1500px;
-}
-
-.test-one{
-	background-image: url(http://a.espncdn.com/photo/2014/0527/mag_suarez01_aw_1600x900.jpg);
-
-}
-
-.test-two{
-	background-image: url(http://a.espncdn.com/photo/2014/0527/mag_suarez02_aw_1600x900.jpg)
-}
