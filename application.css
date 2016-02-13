@@ -22,7 +22,7 @@ html{
 
 .title-container{
 	height: 1000px;
-	background-image: url("images/light-coffee-pen-working.jpg");
+	background-image: url("images/shoes_ocean.jpg");
 	/*width: 70%;*/
 	margin: 0 auto;
 }
@@ -39,7 +39,7 @@ html{
 	width: 800px;
 	height: 600px;
 	margin: 0 auto;
-	padding-top: 372px;
+	padding-top: 285px;
 	text-align: center;
 }
 
@@ -132,7 +132,7 @@ html{
 	position: fixed;
 	top: 0;
 	right: 0;
-	background-color: #36D7B7;
+	background-color: #fff;
 	width: 74px;
 	height: 48px;
 	float: right;
@@ -140,10 +140,12 @@ html{
 	padding-top: 12px;
 	border-radius: 0 0 3px 3px;
 	z-index: 5;
+	border: 1px solid #c0c2c7;
+	border-top-style: none;
 }
 
 .horizontal-line{
-	background-color: #fff;
+	background-color: #fc6454;
 	width: 48%;
 	/*display: block;*/
 	height: 4px;
