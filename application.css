@@ -21,7 +21,7 @@ html{
 }
 
 .title-container{
-	height: 1000px;
+	height: 800px;
 	background-image: url("images/shoes_ocean.jpg");
 	/*width: 70%;*/
 	margin: 0 auto;
@@ -114,7 +114,7 @@ html{
 	height: 50px;
 	animation: pulsate 1500ms ease-in-out;
 	animation-iteration-count: infinite;
-	position: fixed;
+	position: absolute;
 }
 
 @keyframes pulsate{
@@ -263,14 +263,14 @@ html{
 
 .title-bottom-section{
 	color: #fff;
-    font-size: 22px;
+  font-size: 22px;
 	width: 100%;
-	margin-top: 325px;
+	margin-top: 113px;
 }
 
 .pulse-icon-wrapper{
 	margin: 0 auto;
-    width: 68px;
+  width: 54px;
 	position: relative;
 }
 
@@ -322,32 +322,22 @@ html{
 	width: 577px;
 }
 
-.take-a-seat{
-	clear: left;
-	width: 320px;
+#quoteSection{
+	height: 1000px;
+	background-image: url('images/Tony-Scialo-7.jpg');
+}
+
+.skills-block{
+	width: 186px;
+	border: 3px solid #000;
+	border-radius: 7px;
 	font-size: 54px;
-	margin: 0 auto;
-	padding-top: 30px;
-	color: #6C7A89;
+	font-weight: 200;
+	text-align: center;
+	padding: 8px 0;
+	font-family: 'Dosis', sans-serif;
 }
 
-.take-a-seat-row{
-	margin-bottom: 36px;
-}
-
-.take-a-seat-letter{
-	width: 80px;
-	display: inline-block;
-}
-
-.take-a-seat-first-letter{
-	color: #36D7B7;
-	border-bottom: 2px solid #36D7B7;
-}
-
-.take-a-seat-last-letter{
-	width: 37px;
-}
 
 .peeking-picture{
 	background-image: url("images/light-coffee-pen-working.jpg");
