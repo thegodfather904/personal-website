@@ -328,12 +328,26 @@ html{
 
 .quote-contianer{
 	width: 600px;
+	padding-top: 130px;
+	margin-left: 5%;
 }
 
 .quote-line{
 	display: block;
-	font-size: 30px;
+	font-size: 36px;
 	color: #fff;
+	font-family: 'PT Mono', sans-serif;
+	text-align: right;
+	padding: 10px 0;
+}
+
+.color-quote{
+	color: #fc6454;
+}
+
+.leonard-cohen{
+	font-size: 30px;
+	margin-top: 15px;
 }
 
 .skills-block{
