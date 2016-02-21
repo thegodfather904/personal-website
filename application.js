@@ -1,8 +1,6 @@
 $(document).ready(function(){
 	addClickEvents();
 	//loopThroughTitleWords();
-
-	new WOW().init();
 });
 
 
@@ -45,8 +43,13 @@ function pulsateClick(){
 }
 
 function showMoreSkillsClick(){
-	$('.see-more-skills-label').click(function(){
+	var skillsLabel = $('.see-more-skills-label');
+
+	skillsLabel.click(function(){
 		$('.hidden-skills-section').slideDown();
+		$('.about-me-container').height(900);
+		skillsLabel.html('less');
+		skillsLabel.addClass('show-less');
 	});
 }
 

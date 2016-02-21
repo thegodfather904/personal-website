@@ -368,7 +368,7 @@ html{
 	font-family: 'Dosis', sans-serif;
 }
 
-.skills-container .skills-block-container:nth-child(4n){
+.skills-container .skills-block-container:nth-child(4n), .hidden-skills-section .skills-block-container:nth-child(4n){
 	margin-right: 0px;
 }
 
@@ -420,6 +420,51 @@ html{
 #javaSkillsBlock .skills-block-circle{
 	background-color: #9A12B3;
 	border-color: #9A12B3;
+	color: #fff;
+}
+
+#jsfSkillsBlock .skills-block{
+	border-color: #59ABE3;
+	color: #59ABE3;
+}
+
+#jsfSkillsBlock .skills-block-circle{
+	background-color: #59ABE3;
+	border-color: #59ABE3;
+	color: #fff;
+}
+
+#pfSkillsBlock .skills-block{
+	border-color: #F27935;
+	color: #F27935;
+	font-size: 30px;
+}
+
+#pfSkillsBlock .skills-block-circle{
+	background-color: #F27935;
+	border-color: #F27935;
+	color: #fff;
+}
+
+#gitSkillsBlock .skills-block{
+	border-color: #DB0A5B;
+	color: #DB0A5B;
+}
+
+#gitSkillsBlock .skills-block-circle{
+	background-color: #DB0A5B;
+	border-color: #DB0A5B;
+	color: #fff;
+}
+
+#linuxSkillsBlock .skills-block{
+	border-color: #2ECC71;
+	color: #2ECC71;
+}
+
+#linuxSkillsBlock .skills-block-circle{
+	background-color: #2ECC71;
+	border-color: #2ECC71;
 	color: #fff;
 }
 
@@ -540,7 +585,7 @@ html{
 
 .meet-me-section{
 	height: 200px;
-	background-color: #323232;
+	background-color: #fc6454;
 }
 
 .meet-me-section-title{
@@ -560,10 +605,10 @@ html{
 
 .down-triangle{
 	width: 0;
-    height: 0;
-    border-top: 50px solid #323232;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
+  height: 0;
+  border-top: 50px solid #fc6454;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
 	margin: 0 auto;
 }
 
