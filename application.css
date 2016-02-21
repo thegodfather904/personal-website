@@ -274,7 +274,7 @@ html{
 }
 
 .pulse-icon-wrapper:hover{
-	color: #36D7B7;
+	color: #fc6454;
 	cursor: pointer;
 	cursor: hand;
 }
@@ -325,19 +325,19 @@ html{
 .adele{
 	font-size: 38px;
 	text-align: center;
-	padding: 50px 0 24px 0;
+	padding: 60px 0 38px 0;
 	font-weight: 100;
 }
 
 .skills-container{
-	margin-top: 60px;
+	margin: 120px 0;
 	overflow: hidden;
 }
 
 .skills-block-container{
 	width: 186px;
 	float: left;
-	margin-right: 60px;
+	margin-right: 100px;
 }
 
 .skills-block-circle{
@@ -366,6 +366,15 @@ html{
 	height: 92px;
 	line-height: 88px;
 	font-family: 'Dosis', sans-serif;
+}
+
+.skills-container .skills-block-container:nth-child(4n){
+	margin-right: 0px;
+}
+
+.hidden-skills-section{
+	display: none;
+	height: 200px;
 }
 
 /*All of the differnt skills blck colors*/
@@ -412,6 +421,32 @@ html{
 	background-color: #9A12B3;
 	border-color: #9A12B3;
 	color: #fff;
+}
+
+.see-more-skills-line{
+	height: 1px;
+	border-top: 2px solid #c0c2c7;
+}
+
+.see-more-skills-label{
+	width: 90px;
+	height: 45px;
+	border-bottom-left-radius: 47px;
+	border-bottom-right-radius: 47px;
+	border: 2px solid #c0c2c7;
+	border-top: 2px solid #fff;
+	margin: -2px auto 0 auto;
+	text-align: center;
+	padding-top: 6px;
+	font-size: 14px;
+	color: #fc6454;
+	box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.2);
+}
+
+.see-more-skills-label:hover{
+	text-decoration: underline;
+	cursor: pointer;
+	cursor: hand;
 }
 
 #quoteSection{

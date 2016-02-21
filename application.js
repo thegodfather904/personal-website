@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	addClickEvents();
 	//loopThroughTitleWords();
-	
+
 	new WOW().init();
 });
 
@@ -9,6 +9,7 @@ $(document).ready(function(){
 function addClickEvents(){
 	menuClick();
 	pulsateClick();
+	showMoreSkillsClick();
 }
 
 function menuClick(){
@@ -19,14 +20,14 @@ function menuClick(){
 				marginRight: '+=400px'
 			}, 350, function() {
 			});
-			
+
 			menu.addClass('menu-open');
 			$('.menu-button').addClass('menu-button-open');
 		}
 		else{
 			menu.animate({
 				marginRight: '-=400px'
-			}, 350, function(){	
+			}, 350, function(){
 			});
 			menu.removeClass('menu-open');
 			$('.menu-button').removeClass('menu-button-open');
@@ -37,56 +38,55 @@ function menuClick(){
 
 function pulsateClick(){
 	$('.pulse-icon-wrapper').click(function(e){
-		$("body, html").animate({ 
-			scrollTop: $('#aboutMe').offset().top 
+		$("body, html").animate({
+			scrollTop: $('#aboutMe').offset().top
 		}, 500);
+	});
+}
+
+function showMoreSkillsClick(){
+	$('.see-more-skills-label').click(function(){
+		$('.hidden-skills-section').slideDown();
 	});
 }
 
 
 /*Loops through the 'beautiful' synonyms*/
 function loopThroughTitleWords(){
-	
+
 	var wordArray = ["elegant", "dynamic", "emotive"];
-	
+
 	var allSpans = "";
 	for(var i = 0; i < wordArray.length; i++){
 		allSpans += "<span class = 'hidden-title-word'>" + wordArray[i] + "</span>";
 	}
-	
+
 	//add the word spans to the div
 	var $beautifulWrapper = $('#beautifulWrapper');
 	$beautifulWrapper.html(allSpans);
-	
+
 	var $beautifulWrapper = $('#beautifulWrapper span');
-	
+
 	var needToShow = 0;
 	var currentlyShowing = wordArray.length - 1;
-	
+
 	setInterval(function(){
-		
+
 		$beautifulWrapper.eq(currentlyShowing).fadeOut();
 		$beautifulWrapper.eq(needToShow).fadeIn();
-		
+
 		if(currentlyShowing == wordArray.length - 1)
 			currentlyShowing = 0;
 		else
 			currentlyShowing++;
-		
+
 		if(needToShow == wordArray.length - 1)
 			needToShow = 0;
 		else
 			needToShow++;
-			
-		
+
+
 	}, 3000);
 
-	
+
 }
-
-
-
-
-
-
-
