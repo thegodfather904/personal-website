@@ -36,7 +36,6 @@ html{
 }
 .name-container{
 	width: 800px;
-	height: 600px;
 	margin: 0 auto;
 	padding-top: 285px;
 	text-align: center;
@@ -262,14 +261,14 @@ html{
 
 .title-bottom-section{
 	color: #fff;
-  font-size: 22px;
+	font-size: 22px;
 	width: 100%;
-	margin-top: 113px;
+	margin-top: 215px;
 }
 
 .pulse-icon-wrapper{
 	margin: 0 auto;
-  width: 54px;
+	width: 54px;
 	position: relative;
 }
 
@@ -628,18 +627,70 @@ html{
 	font-weight: 100;
 }
 
+.email-container{
+	margin-top: 56px;
+}
+
+.email-icon-container{
+	width: 100px;
+    margin: 0 auto 12px auto;
+	width: 34px;
+}
+
 .em-add{
-	letter-spacing: 2px;
+	letter-spacing: 4px;
 	margin: 0 auto;
 	font-size: 20px;
-	width: 302px;
+	width: 400px;
+	text-transform: uppercase;
+}
+
+.share-me{
+	width: 312px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.share-me-title{
+	letter-spacing: 2px;
+	font-size: 16px;
+	width: 176px;
+	margin: 0 auto;
+}
+
+.share-me span{
+	display: block;
+	float: left;
+	padding: 20px 20px;
+	margin: 0 25px;
+	border-radius: 5px;
+}
+
+.share-me span:hover{
+	cursor: pointer;
+	cursor: hand;
+	color: #fff;
+}
+
+#shareMeTwitter:hover{
+	background-color: #00aced;
+}
+
+#shareMeFacebook:hover{
+	background-color: #3b5998;
+}
+#shareMeGit:hover{
+	background-color: #66B849;
+}
+
+.copyright{
+	padding-bottom: 5px;
+	font-weight: 100;
+	width: 95px;
+	margin: 0 auto;
 }
 
 @media only screen and (max-width: 1300px){
-	.name-container{
-		margin-left: 10%;
-	}
-
 	.web-design-skills-container{
 		width: 100%;
 	}
@@ -663,9 +714,13 @@ html{
 	}
 }
 
-@media only screen and (max-width: 820px){
-	.web-design-skills{
-		height: 1500px;
+@media only screen and (max-width: 850px){
+	.name{
+		font-size: 70px;
+	}
+
+	.name-container{
+		width: 608px;
 	}
 }
 
@@ -676,32 +731,19 @@ html{
 
 	.name-container{
 		padding-top: 110px;
+		width: 80%;
 	}
 
-	.web-design-skills{
-		height: 1550px;
+	.title-container{
+		height: 500px;
 	}
-}
 
-@media only screen and (max-width: 520px){
-	.name-container{
-		width: 270px;
-		margin: 0 auto;
-	}
-	.name{
+	.my-name-is, .what-i-do{
 		font-size: 24px;
 	}
 
-	.menu-button{
-		margin-right: 10px;
+	.title-bottom-section{
+		margin-top: 182px;
 	}
 
-	.web-design-skill-title{
-		height: auto;
-		padding: 0 20px;
-	}
-
-	.web-design-skill-label{
-		padding: 0 20px;
-	}
 }
