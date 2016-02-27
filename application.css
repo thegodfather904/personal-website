@@ -357,7 +357,7 @@ html{
 
 .skills-block{
 	width: 100%;
-	border: 3px solid #000;
+	border: 1px solid #000;
 	border-radius: 7px;
 	font-size: 54px;
 	font-weight: 200;
@@ -378,94 +378,106 @@ html{
 
 /*All of the differnt skills blck colors*/
 #htmlSkillsBlock .skills-block{
-	border-color: #4183D7;
-	color: #4183D7;
+	border-color: #6C7A89;
+	color: #fc6454;
 }
 
 #htmlSkillsBlock .skills-block-circle{
-	background-color: #4183D7;
-	border-color: #4183D7;
+	background-color: #fc6454;
+	border-color: #fc6454;
 	color: #fff;
 }
 
 #cssSkillsBlock .skills-block{
-	border-color: #03C9A9;
-	color: #03C9A9;
+	border-color: #6C7A89;
+	color: #fc6454;
 }
 
 #cssSkillsBlock .skills-block-circle{
-	background-color: #03C9A9;
-	border-color: #03C9A9;
+	background-color: #fc6454;
+	border-color: #fc6454;
 	color: #fff;
 }
 
 #jsSkillsBlock .skills-block{
-	border-color: #F4B350;
-	color: #F4B350;
+	border-color: #6C7A89;
+	color: #fc6454;
 	font-size: 30px;
 }
 
 #jsSkillsBlock .skills-block-circle{
-	background-color: #F4B350;
-	border-color: #F4B350;
+	background-color: #fc6454;
+	border-color: #fc6454;
 	color: #fff;
 }
 
 #javaSkillsBlock .skills-block{
-	border-color: #9A12B3;
-	color: #9A12B3;
+	border-color: #6C7A89;
+	color: #fc6454;
 }
 
 #javaSkillsBlock .skills-block-circle{
-	background-color: #9A12B3;
-	border-color: #9A12B3;
+	background-color: #fc6454;
+	border-color: #fc6454;
 	color: #fff;
 }
 
 #jsfSkillsBlock .skills-block{
-	border-color: #59ABE3;
-	color: #59ABE3;
+	border-color: #6C7A89;
+	color: #fc6454;
 }
 
 #jsfSkillsBlock .skills-block-circle{
-	background-color: #59ABE3;
-	border-color: #59ABE3;
+	background-color: #fc6454;
+	border-color: #fc6454;
 	color: #fff;
 }
 
 #pfSkillsBlock .skills-block{
-	border-color: #F27935;
-	color: #F27935;
+	border-color: #6C7A89;
+	color: #fc6454;
 	font-size: 30px;
 }
 
 #pfSkillsBlock .skills-block-circle{
-	background-color: #F27935;
-	border-color: #F27935;
+	background-color: #fc6454;
+	border-color: #fc6454;
 	color: #fff;
 }
 
 #gitSkillsBlock .skills-block{
-	border-color: #DB0A5B;
-	color: #DB0A5B;
+	border-color: #6C7A89;
+	color: #fc6454;
 }
 
 #gitSkillsBlock .skills-block-circle{
-	background-color: #DB0A5B;
-	border-color: #DB0A5B;
+	background-color: #fc6454;
+	border-color: #fc6454;
 	color: #fff;
 }
 
 #linuxSkillsBlock .skills-block{
-	border-color: #2ECC71;
-	color: #2ECC71;
+	border-color: #6C7A89;
+	color: #fc6454;
 }
 
 #linuxSkillsBlock .skills-block-circle{
-	background-color: #2ECC71;
-	border-color: #2ECC71;
+	background-color: #fc6454;
+	border-color: #fc6454;
 	color: #fff;
 }
+
+/* Might go back to these
+border-color: #4183D7
+background-color: #03C9A9
+background-color: #F4B350
+background-color: #9A12B3
+background-color: #59ABE3
+background-color: #F27935
+background-color: #DB0A5B
+background-color: #2ECC71
+*/
+
 
 .see-more-skills-line{
 	height: 1px;
@@ -628,7 +640,7 @@ html{
 }
 
 .email-container{
-	margin-top: 56px;
+	margin-top: 84px;
 }
 
 .email-icon-container{
@@ -647,7 +659,7 @@ html{
 
 .share-me{
 	width: 312px;
-	margin: 0 auto;
+	margin: 100px auto 0 auto;
 	overflow: hidden;
 }
 
@@ -656,6 +668,7 @@ html{
 	font-size: 16px;
 	width: 176px;
 	margin: 0 auto;
+	padding-bottom: 7px;
 }
 
 .share-me span{
