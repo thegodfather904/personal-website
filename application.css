@@ -21,8 +21,8 @@ html{
 }
 
 .title-container{
-	height: 800px;
-	background-image: url("images/Mountain.jpg");
+	height: 100vh;
+	background-image: url("images/shoes_ocean.jpg");
 	/*width: 70%;*/
 	margin: 0 auto;
 }
@@ -31,13 +31,13 @@ html{
 	/*background-color: #000;
 	opacity: .7;*/
 	width: 100%;
-	height: 1000px;
-	background-color: rgba(0,0,0,.2);
+	height: 100vh;
+	background-color: rgba(0,0,0,.4);
 }
 .name-container{
 	width: 800px;
 	margin: 0 auto;
-	padding-top: 285px;
+	padding-top: 16%;
 	text-align: center;
 }
 
@@ -263,7 +263,9 @@ html{
 	color: #fff;
 	font-size: 22px;
 	width: 100%;
-	margin-top: 215px;
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 30px;
 }
 
 .pulse-icon-wrapper{
@@ -280,7 +282,7 @@ html{
 
 .about-me-container{
 	background-color: #fff;
-	height: 800px;
+	height: 100vh;
 	width: 100%;
 }
 
@@ -375,8 +377,6 @@ html{
 	display: none;
 	height: 200px;
 }
-
-
 
 /*All of the differnt skills blck colors*/
 #htmlSkillsBlock .skills-block{
@@ -508,7 +508,7 @@ background-color: #2ECC71
 }
 
 #quoteSection{
-	height: 800px;
+	height: 100vh;
 	background-image: url('images/Tony-Scialo-7-pano.jpg');
 }
 
@@ -845,12 +845,7 @@ background-color: #2ECC71
 	}
 
 	.name-container{
-		padding-top: 110px;
 		width: 80%;
-	}
-
-	.title-container{
-		height: 500px;
 	}
 
 	.my-name-is, .what-i-do{
