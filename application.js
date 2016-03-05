@@ -8,7 +8,17 @@ function addClickEvents(){
 	menuClick();
 	pulsateClick();
 	showMoreSkillsClick();
+	menuLinkClick();
 }
+
+function menuLinkClick(){
+	$('.menu-option').click(function(e){
+		$('html body').animate({
+			scrollTop: $('#aboutMe').offset().top
+		}, 500);
+	});
+}
+
 
 function menuClick(){
 	$('.menu-button').click(function(){

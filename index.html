@@ -13,7 +13,6 @@
 	<link rel = "stylesheet" type = "text/css" href = "application.css"/>
 	<link rel = "stylesheet" type = "text/css" href = "animate.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src = "wow.min.js"></script>
 	<script src = "application.js"></script>
 </head>
 
@@ -25,12 +24,13 @@
 	</div>
 	<div class = "menu">
 		<div class = "menu-options-container">
-			<div class = "menu-option">home</div>
-			<div class = "menu-option">web design</div>
-			<div class = "menu-option">about me</div>
+			<div class = "menu-option home">home</div>
+			<div class = "menu-option aboutMe"><a href = "#aboutMe">hello</a></div>
+			<div class = "menu-option"><a href = "#quoteSection">quote</a></div>
+			<div class = "menu-option"><a href = "#contactMe">contact</a></div>
 		</div>
 	</div>
-	<div class = "title-container parallax-container">
+	<div id = "home" class = "title-container parallax-container">
 		<div class = "title-overlay">
 			<div class = "name-container">
 				<div class = "my-name-is">my name is</div>
@@ -135,12 +135,7 @@
 		<div class = "down-triangle"></div>
 	</div>
 
-	<div class = "contact-me-section parallax-container">
-
-		<a class="text-link">Lost&nbsp;My&nbsp;Name</a>
-
-
-
+	<div id = "contactMe" class = "contact-me-section parallax-container">
 		<div class = "cool-project">
 			got a cool project for me to work on?
 		</div>
