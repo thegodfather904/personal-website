@@ -30,7 +30,7 @@ html{
 .title-overlay{
 	width: 100%;
 	height: 100vh;
-	background-color: rgba(0,0,0,.4);
+	background-color: rgba(0,0,0,.5);
 }
 .name-container{
 	width: 800px;
@@ -53,14 +53,13 @@ html{
 	color: #fff;
 	font-size: 30px;
 	font-weight: 100;
-	font-style: italic
 }
 
 .what-i-do{
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     margin-top: 10px;
-    padding: 8px 0;
+    padding: 10px 0;
 }
 
 .name-letter{
@@ -71,11 +70,8 @@ html{
 	width: 120px;
 }
 
-#beautifulWrapper{
+.what-i-do-change{
 	color: #fc6454;
-	display: inline-block;
-	width: 120px;
-
 }
 
 .hidden-title-word{
@@ -226,6 +222,7 @@ html{
 	background-color: #fc6454;
 	width: 400px;
 	margin-right: -400px;
+	z-index: 10;
 }
 
 .menu-options-container{
@@ -250,7 +247,7 @@ html{
 .menu-option a:hover{
 	color: #000;
 	cursor: pointer;
-	cursor: hand; 
+	cursor: hand;
 }
 
 
@@ -280,6 +277,7 @@ html{
 	background-color: #fff;
 	height: 100vh;
 	width: 100%;
+	min-height: 800px;
 }
 
 .about-me-container-inner{
@@ -333,8 +331,7 @@ html{
 
 .skills-block-container{
 	width: 186px;
-	float: left;
-	margin-right: 100px;
+	margin: 0 auto;
 }
 
 .skills-block-circle{
@@ -372,6 +369,11 @@ html{
 .hidden-skills-section{
 	display: none;
 	height: 200px;
+}
+
+.skills-block-center{
+	float: left;
+	width: 25%;
 }
 
 /*All of the differnt skills blck colors*/
@@ -489,7 +491,7 @@ background-color: #2ECC71
 	border-bottom-right-radius: 47px;
 	border: 2px solid #c0c2c7;
 	border-top: 2px solid #fff;
-	margin: -2px auto 0 auto;
+	margin: -2px auto 30px auto;
 	text-align: center;
 	padding-top: 6px;
 	font-size: 14px;
@@ -599,12 +601,11 @@ background-color: #2ECC71
 
 .meet-me-section-title{
 	color: #fff;
-    font-size: 63px;
-    font-weight: 100;
-    width: 478px;
-    margin: 0 auto;
-    padding-top: 63px;
-    letter-spacing: 16px;
+  font-size: 63px;
+  font-weight: 100;
+  padding-top: 63px;
+  letter-spacing: 16px;
+	text-align: center;
 }
 
 .down-triangle-section{
@@ -626,25 +627,27 @@ background-color: #2ECC71
 }
 
 .contact-me-section{
-	height: 600px;
+	height: 500px;
 }
 
 .cool-project{
 	letter-spacing: 2px;
-	margin: 150px auto 0 auto;
+	margin: 60px auto 0 auto;
 	font-size: 22px;
-	width: 438px;
 	font-weight: 100;
+	text-align: center;
+	padding: 0 20px;
 }
 
 .email-container{
-	margin-top: 84px;
+	margin-top: 120px;
+	text-align: center;
+	font-size: 30px;
 }
 
 .email-icon-container{
-	width: 100px;
-    margin: 0 auto 12px auto;
-	width: 34px;
+	display: inline-block;
+	margin-bottom: 12px;
 }
 
 .em-add{
@@ -657,16 +660,16 @@ background-color: #2ECC71
 
 .share-me{
 	width: 312px;
-	margin: 100px auto 0 auto;
+	margin: 120px auto 0 auto;
 	overflow: hidden;
 }
 
 .share-me-title{
 	letter-spacing: 2px;
 	font-size: 16px;
-	width: 176px;
 	margin: 0 auto;
 	padding-bottom: 7px;
+	text-align: center
 }
 
 .share-me span{
@@ -681,6 +684,10 @@ background-color: #2ECC71
 	cursor: pointer;
 	cursor: hand;
 	color: #fff;
+}
+
+.share-me-link{
+	color: #000;
 }
 
 #shareMeTwitter:hover{
@@ -707,11 +714,9 @@ background-color: #2ECC71
 	text-decoration: none;
 	position: relative;
 	letter-spacing: 4px;
-	font-size: 30px;
 	text-transform: uppercase;
 	transition: .3s;
 	margin: 0 auto;
-	width: 556px;
 	font-weight: 100;
 }
 
@@ -744,55 +749,202 @@ background-color: #2ECC71
 	transform: translateY(0px);
 }
 
-@media only screen and (max-width: 1300px){
-	.web-design-skills-container{
-		width: 100%;
+@media only screen and (max-width: 1200px){
+	.about-me-container-inner{
+		width: 90%;
 	}
 }
 
 @media only screen and (max-width: 1000px){
-	.web-design-skills{
-		height: 1400px;
+
+	.skills-container{
+		margin: 80px 0 0 0;
 	}
 
-	.web-design-skill{
-		width: 100%;
-		padding: 50px 0;
-		border-right: none;
+	.skills-block-center{
+		width: 50%;
+	}
+
+	.skills-block-container{
+		width: 280px;
+		margin-bottom: 80px;
+	}
+
+	.skills-block-circle{
+		margin-left: 258px;
+	}
+
+	.about-me-container{
 		height: auto;
 	}
 
-	.web-design-skill-label{
-		text-align: center;
-		padding: 0 95px;
+	.hidden-skills-section{
+		height: 340px;
+	}
+
+	.show-less{
+		margin-bottom: 30px;
+	}
+
+	.quote-contianer{
+		width: 350px;
+	}
+
+	.quote-line{
+		font-size: 26px;
 	}
 }
 
 @media only screen and (max-width: 850px){
-	.name{
-		font-size: 70px;
+	.name-container{
+		text-align: left;
+		width: 80%;
+		padding-left: 10%;
+		margin: 0;
 	}
 
-	.name-container{
-		width: 608px;
+	.my-name-is, .what-i-do{
+		font-size: 28px;
+	}
+
+	.name{
+		padding-left: 0;
+		font-size: 56px;
+	}
+
+	.title-overlay{
+		background-color: rgba(0,0,0,0.6);
 	}
 }
 
 @media only screen and (max-width: 700px){
-	.name{
-		font-size: 35px;
+	.menu-button{
+		margin-right: 4px;
 	}
 
-	.name-container{
-		width: 80%;
+	.name{
+		font-size: 44px;
 	}
 
 	.my-name-is, .what-i-do{
 		font-size: 24px;
 	}
 
-	.title-bottom-section{
-		margin-top: 182px;
+	.email-container{
+		font-size: 20px;
 	}
 
+	.cool-project{
+		font-size: 18px;
+	}
+
+	.meet-me-section{
+		height: 150px;
+	}
+
+	.meet-me-section-title{
+		font-size: 46px;
+		padding-top: 44px;
+	}
+
+	.skills-block-center{
+		width: 100%;
+	}
+
+	.skills-block-container{
+		width: 468px;
+	}
+
+	.skills-block-circle{
+		margin-left: 446px;
+	}
+
+	.hidden-skills-section{
+		height: 686px;
+	}
+
+	.quote-contianer{
+		padding-top: 10%;
+	}
+
+}
+
+@media only screen and (max-width: 550px){
+	.name-container{
+		width: 90%;
+		pading-top: 20%;
+	}
+
+	.my-name-is, .what-i-do{
+		font-size: 20px;
+	}
+
+	.name{
+		font-size: 28px;
+	}
+
+	.adele{
+		font-size: 30px;
+	}
+
+	.about-me-description{
+		font-size: 14px;
+	}
+
+	.skills-block-container{
+		width: 274px;
+	}
+
+	.skills-block-circle{
+		margin-left: 252px;
+	}
+
+	.skills-block{
+		height: 84px;
+		line-height: 84px;
+		font-size: 40px;
+	}
+
+	.hidden-skills-section{
+		height: 652px;
+	}
+
+}
+
+@media only screen and (max-width: 450px){
+	.contact-me-section{
+		height: 350px;
+	}
+
+	.email-container, .share-me{
+		margin-top: 80px;
+	}
+
+	.split-block-effect{
+		font-size: 14px;
+	}
+
+	.cool-project-hide-mobile{
+		display: none;
+	}
+
+	.share-me-title{
+		font-size: 12px;
+	}
+
+	.meet-me-section{
+		height: 120px;
+	}
+
+	.meet-me-section-title{
+		font-size: 26px;
+	}
+
+	.quote-contianer{
+		width: 255px;
+	}
+
+	.quote-line{
+		font-size: 18px;
+	}
 }

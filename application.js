@@ -60,13 +60,11 @@ function showMoreSkillsClick(){
 
 		if(skillsLabel.hasClass(showLess)){
 			$('.hidden-skills-section').slideUp();
-			$('.about-me-container').height(800);
 			skillsLabel.html('more');
 			skillsLabel.removeClass(showLess)
 		}
 		else{
 			$('.hidden-skills-section').slideDown();
-			$('.about-me-container').height(900);
 			skillsLabel.html('less');
 			skillsLabel.addClass(showLess);
 		}

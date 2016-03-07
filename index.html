@@ -35,7 +35,11 @@
 			<div class = "name-container">
 				<div class = "my-name-is">my name is</div>
 				<div class = "name">Anthony Scialo</div>
-				<div class = "what-i-do">and i write <div id = "beautifulWrapper">beautiful</div> code</div>
+				<div class = "what-i-do">
+					<span class = "what-i-do-label">and i write</span>
+					<span class = "what-i-do-change">beautiful</span>
+					<span class = "what-i-do-label">code</span>
+				</div>
 			</div>
 			<div class = "title-bottom-section">
 				<div class = "pulse-icon-wrapper">
@@ -55,54 +59,70 @@
 				the full software development lifecycle i can insert myself successfully into any cycle of a project. some of my skills include:
 			</div>
 			<div class = "skills-container">
-				<div id = "javaSkillsBlock" class = "skills-block-container">
-					<div class = "skills-block-circle">J</div>
-					<div class = "skills-block">
-						JAVA
+				<div class = "skills-block-center">
+					<div id = "javaSkillsBlock" class = "skills-block-container">
+						<div class = "skills-block-circle">J</div>
+						<div class = "skills-block">
+							JAVA
+						</div>
 					</div>
 				</div>
-				<div id = "htmlSkillsBlock" class = "skills-block-container">
-					<div class = "skills-block-circle">5</div>
-					<div class = "skills-block">
-						HTML
+				<div class = "skills-block-center">
+					<div id = "htmlSkillsBlock" class = "skills-block-container">
+						<div class = "skills-block-circle">5</div>
+						<div class = "skills-block">
+							HTML
+						</div>
 					</div>
 				</div>
-				<div id = "cssSkillsBlock" class = "skills-block-container">
-					<div class = "skills-block-circle">3</div>
-					<div class = "skills-block">
-						CSS
+				<div class = "skills-block-center">
+					<div id = "cssSkillsBlock" class = "skills-block-container">
+						<div class = "skills-block-circle">3</div>
+						<div class = "skills-block">
+							CSS
+						</div>
 					</div>
 				</div>
-				<div id = "jsSkillsBlock" class = "skills-block-container">
-					<div class = "skills-block-circle">JS</div>
-					<div class = "skills-block">
-						JAVASCRIPT
+				<div class = "skills-block-center">
+					<div id = "jsSkillsBlock" class = "skills-block-container">
+						<div class = "skills-block-circle">JS</div>
+						<div class = "skills-block">
+							JAVASCRIPT
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class = "hidden-skills-section">
-				<div id = "jsfSkillsBlock" class = "skills-block-container">
-					<div class = "skills-block-circle">JSF</div>
-					<div class = "skills-block">
-						JSF
+				<div class = "skills-block-center">
+					<div id = "jsfSkillsBlock" class = "skills-block-container">
+						<div class = "skills-block-circle">JSF</div>
+						<div class = "skills-block">
+							JSF
+						</div>
 					</div>
 				</div>
-				<div id = "pfSkillsBlock" class = "skills-block-container">
-					<div class = "skills-block-circle">PF</div>
-					<div class = "skills-block">
-						PRIMEFACES
+				<div class = "skills-block-center">
+					<div id = "pfSkillsBlock" class = "skills-block-container">
+						<div class = "skills-block-circle">PF</div>
+						<div class = "skills-block">
+							PRIMEFACES
+						</div>
 					</div>
 				</div>
-				<div id = "gitSkillsBlock" class = "skills-block-container">
-					<div class = "skills-block-circle">G</div>
-					<div class = "skills-block">
-						GIT
+				<div class = "skills-block-center">
+					<div id = "gitSkillsBlock" class = "skills-block-container">
+						<div class = "skills-block-circle">G</div>
+						<div class = "skills-block">
+							GIT
+						</div>
 					</div>
 				</div>
-				<div id = "linuxSkillsBlock" class = "skills-block-container">
-					<div class = "skills-block-circle">L</div>
-					<div class = "skills-block">
-						LINUX
+				<div class = "skills-block-center">
+					<div id = "linuxSkillsBlock" class = "skills-block-container">
+						<div class = "skills-block-circle">L</div>
+						<div class = "skills-block">
+							LINUX
+						</div>
 					</div>
 				</div>
 			</div>
@@ -125,7 +145,7 @@
 		</div>
 	</div>
 
-	<div class = "meet-me-section parallax-container">
+	<div class = "meet-me-section">
 		<div class = "meet-me-section-title">
 			interested?
 		</div>
@@ -137,12 +157,12 @@
 
 	<div id = "contactMe" class = "contact-me-section parallax-container">
 		<div class = "cool-project">
-			got a cool project for me to work on?
+			got a cool project <span class = "cool-project-hide-mobile">for me to work on</span>?
 		</div>
 		<div class = "email-container">
-			<div class = "email-icon-container">
-				<i class="fa fa-envelope-o fa-2x"></i>
-			</div>
+			<span class = "email-icon-container">
+				<i class="fa fa-envelope-o"></i>
+			</span>
 			<span class = "split-block-effect">tonywritescode@gmail.com</span>
 		</div>
 
@@ -150,15 +170,21 @@
 			<div class = "share-me-title">
 				share or view code
 			</div>
-			<span id = "shareMeTwitter" class = "share-me-item">
-				<i class="fa fa-twitter"></i>
-			</span>
-			<span id = "shareMeFacebook" class = "share-me-item">
-				<i class="fa fa-facebook"></i>
-			</span>
-			<span id = "shareMeGit" class = "share-me-item">
-				<i class="fa fa-github"></i>
-			</span>
+			<a href="http://ctt.ec/i38B2" target = "_blank" class = "share-me-link">
+				<span id = "shareMeTwitter" class = "share-me-item">
+					<i class="fa fa-twitter"></i>
+				</span>
+			</a>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//espn.go.com/" target = "_blank" class = "share-me-link">
+				<span id = "shareMeFacebook" class = "share-me-item">
+					<i class="fa fa-facebook"></i>
+				</span>
+			</a>
+			<a href = "https://github.com/thegodfather904/personal-website" target = "_blank" class = "share-me-link">
+				<span id = "shareMeGit" class = "share-me-item">
+					<i class="fa fa-github"></i>
+				</span>
+			</a>
 		</div>
 	</div>
 	<div class = "copyright">
