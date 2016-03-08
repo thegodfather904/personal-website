@@ -222,11 +222,7 @@ html{
 	background-color: #fc6454;
 	width: 400px;
 	margin-right: -400px;
-<<<<<<< HEAD
-	z-index: 10;
-=======
 	z-index: 4;
->>>>>>> redesign
 }
 
 .menu-options-container{
@@ -281,11 +277,7 @@ html{
 	background-color: #fff;
 	height: 100vh;
 	width: 100%;
-<<<<<<< HEAD
-	min-height: 800px;
-=======
 	min-height: 890px;
->>>>>>> redesign
 }
 
 .about-me-container-inner{
