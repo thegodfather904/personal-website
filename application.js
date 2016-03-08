@@ -12,36 +12,54 @@ function addClickEvents(){
 }
 
 function menuLinkClick(){
-	$('.menu-option').click(function(e){
-		$('html body').animate({
-			scrollTop: $('#aboutMe').offset().top
-		}, 500);
+	$('#menuHome').click(function(e){
+		slidePage('#home');
 	});
+	$('#menuHello').click(function(e){
+		slidePage('#aboutMe');
+	});
+	$('#menuQuote').click(function(e){
+		slidePage('#quoteSection');
+	});
+	$('#menuContact').click(function(e){
+		slidePage('#contactMe');
+	});
+}
+
+function slidePage(id){
+	slideMenu();
+	$('html body').animate({
+		scrollTop: $(id).offset().top
+	}, 500);
 }
 
 
 function menuClick(){
 	$('.menu-button').click(function(){
-		var menu = $('.menu' );
-		if(!menu.hasClass('menu-open')){
-			menu.animate({
-				marginRight: '+=400px'
-			}, 350, function() {
-			});
-
-			menu.addClass('menu-open');
-			$('.menu-button').addClass('menu-button-open');
-		}
-		else{
-			menu.animate({
-				marginRight: '-=400px'
-			}, 350, function(){
-			});
-			menu.removeClass('menu-open');
-			$('.menu-button').removeClass('menu-button-open');
-			$('.menu-button').addClass('menu-button-start');
-		}
+		slideMenu();
 	});
+}
+
+function slideMenu(){
+	var menu = $('.menu' );
+	if(!menu.hasClass('menu-open')){
+		menu.animate({
+			marginRight: '+=400px'
+		}, 350, function() {
+		});
+
+		menu.addClass('menu-open');
+		$('.menu-button').addClass('menu-button-open');
+	}
+	else{
+		menu.animate({
+			marginRight: '-=400px'
+		}, 350, function(){
+		});
+		menu.removeClass('menu-open');
+		$('.menu-button').removeClass('menu-button-open');
+		$('.menu-button').addClass('menu-button-start');
+	}
 }
 
 function pulsateClick(){
@@ -68,8 +86,6 @@ function showMoreSkillsClick(){
 			skillsLabel.html('less');
 			skillsLabel.addClass(showLess);
 		}
-
-
 	});
 }
 

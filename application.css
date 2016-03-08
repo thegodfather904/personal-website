@@ -238,19 +238,11 @@ html{
 	padding: 16px 0;
 }
 
-
-.menu-option a{
-	text-decoration: none;
-	color: #fff;
-}
-
-.menu-option a:hover{
+.menu-option:hover{
 	color: #000;
 	cursor: pointer;
 	cursor: hand;
 }
-
-
 
 .title-bottom-section{
 	color: #fff;
@@ -907,6 +899,10 @@ background-color: #2ECC71
 
 	.hidden-skills-section{
 		height: 652px;
+	}
+
+	.name-container{
+		padding-top: 30%;
 	}
 
 }
