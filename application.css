@@ -500,6 +500,7 @@ background-color: #2ECC71
 #quoteSection{
 	height: 100vh;
 	background-image: url('images/Tony-Scialo-7-pano.jpg');
+	min-height: 570px;
 }
 
 .quote-contianer{
@@ -800,7 +801,7 @@ background-color: #2ECC71
 	}
 
 	.name{
-		padding-left: 0;
+		padding: 10px 0;
 		font-size: 56px;
 	}
 
@@ -856,7 +857,7 @@ background-color: #2ECC71
 	}
 
 	.quote-contianer{
-		padding-top: 10%;
+		padding-top: 12%;
 	}
 
 }
@@ -872,7 +873,7 @@ background-color: #2ECC71
 	}
 
 	.name{
-		font-size: 28px;
+		font-size: 30px;
 	}
 
 	.adele{
