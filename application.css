@@ -273,7 +273,7 @@ html{
 	background-color: #fff;
 	height: 100vh;
 	width: 100%;
-	min-height: 890px;
+	min-height: 960px;
 }
 
 .about-me-container-inner{
@@ -295,8 +295,8 @@ html{
 
 .about-me-description{
 	letter-spacing: 2px;
-	line-height: 180%;
-	font-size: 18px;
+	line-height: 225%;
+	font-size: 20px;
 }
 
 .valhalla{
