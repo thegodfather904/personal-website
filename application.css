@@ -225,6 +225,10 @@ html{
 	z-index: 4;
 }
 
+.menu-open{
+	box-shadow: 5px 0px 10px 5px rgba(0,0,0,0.75);
+}
+
 .menu-options-container{
 	margin-top: 186px;
 	text-align: right;
@@ -275,6 +279,7 @@ html{
 .about-me-container-inner{
 	width: 70%;
 	margin: 0 auto;
+	font-family: 'dosis', sans-serif;
 }
 
 .about-me-section{
@@ -310,9 +315,9 @@ html{
 }
 
 .adele{
-	font-size: 38px;
+	font-size: 76px;
 	text-align: center;
-	padding: 60px 0 38px 0;
+	padding: 40px 0;
 	font-weight: 100;
 }
 
@@ -500,7 +505,7 @@ background-color: #2ECC71
 #quoteSection{
 	height: 100vh;
 	background-image: url('images/Tony-Scialo-7-pano.jpg');
-	min-height: 570px;
+	min-height: 715px;
 }
 
 .quote-contianer{
@@ -588,7 +593,7 @@ background-color: #2ECC71
 }
 
 .meet-me-section{
-	height: 200px;
+	height: 170px;
 	background-color: #fc6454;
 }
 
@@ -596,7 +601,7 @@ background-color: #2ECC71
 	color: #fff;
   font-size: 63px;
   font-weight: 100;
-  padding-top: 63px;
+  padding-top: 44px;
   letter-spacing: 16px;
 	text-align: center;
 }
@@ -877,7 +882,7 @@ background-color: #2ECC71
 	}
 
 	.adele{
-		font-size: 30px;
+		font-size: 50px;
 	}
 
 	.about-me-description{
@@ -943,5 +948,16 @@ background-color: #2ECC71
 
 	.quote-line{
 		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 350px){
+	.meet-me-section-title{
+		font-size: 22px;
+		padding-top: 36px;
+	}
+
+	.meet-me-section{
+		height: 100px;
 	}
 }
