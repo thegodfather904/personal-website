@@ -155,6 +155,10 @@ html{
 }
 
 .horizontal-top-line, .horizontal-middle-line, .horizontal-bottom-line{
+	-webkit-transition: all 277ms ease-in-out;
+	-moz-transition: all 277ms ease-in-out;
+	-ms-transition: all 277ms ease-in-out;
+	-o-transition: all 277ms ease-in-out;
 	transition: all 277ms ease-in-out;
 }
 
