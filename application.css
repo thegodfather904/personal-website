@@ -371,6 +371,7 @@ html{
 .skills-block-center{
 	float: left;
 	width: 25%;
+	margin-bottom: 140px;
 }
 
 /*All of the differnt skills blck colors*/
@@ -761,6 +762,7 @@ background-color: #2ECC71
 
 	.skills-block-center{
 		width: 50%;
+		margin-bottom: 0;
 	}
 
 	.skills-block-container{
