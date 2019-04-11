@@ -1,45 +1,48 @@
 /*Create by Tony Scialo*/
 
-body{
+body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Ubuntu', sans-serif;
 }
 
-html{
+html {
 	box-sizing: border-box;
 }
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
 	box-sizing: inherit;
 }
 
-.parallax-container{
+.parallax-container {
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: cover;
 }
 
-.title-container{
+.title-container {
 	height: 100vh;
 	background-image: url("images/shoes_ocean.jpg");
 	/*width: 70%;*/
 	margin: 0 auto;
 }
 
-.title-overlay{
+.title-overlay {
 	width: 100%;
 	height: 100vh;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0, 0, 0, .5);
 }
-.name-container{
+
+.name-container {
 	width: 800px;
 	margin: 0 auto;
 	padding-top: 16%;
 	text-align: center;
 }
 
-.name{
+.name {
 	color: #fff;
 	font-size: 87px;
 	text-transform: uppercase;
@@ -49,56 +52,57 @@ html{
 	border-radius: 8px;
 }
 
-.my-name-is, .what-i-do{
+.my-name-is,
+.what-i-do {
 	color: #fff;
 	font-size: 30px;
 	font-weight: 100;
 }
 
-.what-i-do{
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    margin-top: 10px;
-    padding: 10px 0;
+.what-i-do {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	margin-top: 10px;
+	padding: 10px 0;
 }
 
-.name-letter{
+.name-letter {
 	font-size: 60px;
 	color: #fff;
 	float: left;
-	padding-right:50px;
+	padding-right: 50px;
 	width: 120px;
 }
 
-.what-i-do-change{
+.what-i-do-change {
 	color: #fc6454;
 }
 
-.hidden-title-word{
+.hidden-title-word {
 	display: none;
 	position: absolute;
 }
 
-.first-letter-one{
+.first-letter-one {
 	color: #BF55EC;
 	border-bottom: 2px solid #BF55EC;
 }
 
-.first-letter-two{
+.first-letter-two {
 	color: #1BBC9B;
 	border-bottom: 2px solid #1BBC9B;
 }
 
-.name-row{
+.name-row {
 	float: left;
 	margin-bottom: 30px;
 }
 
-.name-row :nth-child(3){
+.name-row :nth-child(3) {
 	padding-right: 0;
 }
 
-.pulse-icon{
+.pulse-icon {
 	border: 1px solid #fff;
 	border-radius: 100%;
 	width: 50px;
@@ -108,18 +112,31 @@ html{
 	position: absolute;
 }
 
-@keyframes pulsate{
-	0%{transform: scale(0.9, 0.9); opacity: 0.0;}
-	50%{opacity: 0.3;}
-	90%{transform: scale(1.1, 1.1); opacity: 0.0;}
-	100%{opacity: 0.0;}
+@keyframes pulsate {
+	0% {
+		transform: scale(0.9, 0.9);
+		opacity: 0.0;
+	}
+
+	50% {
+		opacity: 0.3;
+	}
+
+	90% {
+		transform: scale(1.1, 1.1);
+		opacity: 0.0;
+	}
+
+	100% {
+		opacity: 0.0;
+	}
 }
 
-.pulse-icon-arrow{
+.pulse-icon-arrow {
 	margin: 14px 0 0 14px;
 }
 
-.menu-button{
+.menu-button {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -135,7 +152,7 @@ html{
 	border-top-style: none;
 }
 
-.horizontal-line{
+.horizontal-line {
 	background-color: #fc6454;
 	width: 48%;
 	/*display: block;*/
@@ -146,75 +163,110 @@ html{
 	margin-left: 19px;
 }
 
-.horizontal-top-line{
+.horizontal-top-line {
 	transform: translateY(-8px);
 }
 
-.horizontal-bottom-line{
+.horizontal-bottom-line {
 	transform: translateY(8px);
 }
 
-.horizontal-top-line, .horizontal-middle-line, .horizontal-bottom-line{
+.horizontal-top-line,
+.horizontal-middle-line,
+.horizontal-bottom-line {
 	transition: all 277ms ease-in-out;
 }
 
-.menu-button:hover{
+.menu-button:hover {
 	cursor: pointer;
 	cursor: hand;
 }
 
-.menu-button:hover .horizontal-top-line{
+.menu-button:hover .horizontal-top-line {
 	transform: translateY(-10px);
 	background-color: #fc6454;
 }
 
-.menu-button:hover .horizontal-middle-line{
+.menu-button:hover .horizontal-middle-line {
 	background-color: #fc6454;
 }
 
-.menu-button:hover .horizontal-bottom-line{
+.menu-button:hover .horizontal-bottom-line {
 	transform: translateY(10px);
 	background-color: #fc6454;
 }
 
-.menu-button.menu-button-open .horizontal-middle-line{
+.menu-button.menu-button-open .horizontal-middle-line {
 	visibility: hidden;
 }
 
-.menu-button.menu-button-open .horizontal-top-line{
+.menu-button.menu-button-open .horizontal-top-line {
 	-webkit-animation: horizontal-move-down 500s forwards;
 	animation: horizontal-move-down 500ms forwards;
 }
 
-.menu-button.menu-button-open .horizontal-bottom-line{
+.menu-button.menu-button-open .horizontal-bottom-line {
 	-webkit-animation: horizontal-move-up 500s forwards;
 	animation: horizontal-move-up 500ms forwards;
 }
 
-@-webkit-keyframes horizontal-move-down{
-	0%{transform: translateY(-8px);}
-	50%{transform: translateY(0px);}
-	100%{transform: rotate(-45deg);}
+@-webkit-keyframes horizontal-move-down {
+	0% {
+		transform: translateY(-8px);
+	}
+
+	50% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: rotate(-45deg);
+	}
 }
 
-@keyframes horizontal-move-down{
-	0%{transform: translateY(-8px);}
-	50%{transform: translateY(0px);}
-	100%{transform: rotate(-45deg);}
+@keyframes horizontal-move-down {
+	0% {
+		transform: translateY(-8px);
+	}
+
+	50% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: rotate(-45deg);
+	}
 }
 
-@-webkit-keyframes horizontal-move-up{
-	0%{transform: translateY(8px);}
-	50%{transform: translateY(0px);}
-	100%{transform: rotate(45deg);}
-}
-@keyframes horizontal-move-up{
-	0%{transform: translateY(8px);}
-	50%{transform: translateY(0px);}
-	100%{transform: rotate(45deg);}
+@-webkit-keyframes horizontal-move-up {
+	0% {
+		transform: translateY(8px);
+	}
+
+	50% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: rotate(45deg);
+	}
 }
 
-.menu{
+@keyframes horizontal-move-up {
+	0% {
+		transform: translateY(8px);
+	}
+
+	50% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: rotate(45deg);
+	}
+}
+
+.menu {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -225,30 +277,30 @@ html{
 	z-index: 4;
 }
 
-.menu-open{
-	box-shadow: 5px 0px 10px 5px rgba(0,0,0,0.75);
+.menu-open {
+	box-shadow: 5px 0px 10px 5px rgba(0, 0, 0, 0.75);
 }
 
-.menu-options-container{
+.menu-options-container {
 	margin-top: 186px;
 	text-align: right;
 	width: 100%;
 	padding-right: 50px;
 }
 
-.menu-option{
+.menu-option {
 	font-size: 27px;
 	color: #fff;
 	padding: 16px 0;
 }
 
-.menu-option:hover{
+.menu-option:hover {
 	color: #000;
 	cursor: pointer;
 	cursor: hand;
 }
 
-.title-bottom-section{
+.title-bottom-section {
 	color: #fff;
 	font-size: 22px;
 	width: 100%;
@@ -257,81 +309,81 @@ html{
 	padding-bottom: 30px;
 }
 
-.pulse-icon-wrapper{
+.pulse-icon-wrapper {
 	margin: 0 auto;
 	width: 54px;
 	position: relative;
 }
 
-.pulse-icon-wrapper:hover{
+.pulse-icon-wrapper:hover {
 	color: #fc6454;
 	cursor: pointer;
 	cursor: hand;
 }
 
-.about-me-container{
+.about-me-container {
 	background-color: #fff;
 	height: 100vh;
 	width: 100%;
-	min-height: 960px;
+	min-height: 745px;
 }
 
-.about-me-container-inner{
+.about-me-container-inner {
 	width: 70%;
 	margin: 0 auto;
 	font-family: 'dosis', sans-serif;
 }
 
-.about-me-section{
+.about-me-section {
 	width: 400px;
 	margin: 90px 0 0 100px;
 	float: left;
 }
 
-.about-me-title{
+.about-me-title {
 	font-weight: bold;
 	margin-bottom: 4px;
 }
 
-.about-me-description{
+.about-me-description {
 	letter-spacing: 2px;
 	line-height: 225%;
 	font-size: 20px;
 }
 
-.valhalla{
+.valhalla {
 	font-style: italic;
-    color: #CF000F;
+	color: #CF000F;
 }
 
-.about-me-pictures{
+.about-me-pictures {
 	float: left;
 	margin-left: 76px;
 	margin-top: 28px;
 }
 
-.about-me-picture-1 img{
+.about-me-picture-1 img {
 	width: 577px;
 }
 
-.adele{
+.adele {
 	font-size: 76px;
 	text-align: center;
 	padding: 40px 0;
 	font-weight: 100;
 }
 
-.skills-container{
+.skills-container {
 	margin: 120px 0;
 	overflow: hidden;
 }
 
-.skills-block-container{
+.skills-block-container {
 	width: 186px;
 	margin: 0 auto;
 }
 
-.skills-block-circle{
+.skills-block-circle {
 	text-align: center;
 	border: 1px solid #000;
 	width: 40px;
@@ -339,15 +391,15 @@ html{
 	border-radius: 100%;
 	font-size: 24px;
 	position: absolute;
-  margin-left: 163px;
-  margin-top: -15px;
-  background-color: #000;
-  z-index: 2;
-  padding-top: 3px;
+	margin-left: 163px;
+	margin-top: -15px;
+	background-color: #000;
+	z-index: 2;
+	padding-top: 3px;
 	font-family: 'Dosis', sans-serif;
 }
 
-.skills-block{
+.skills-block {
 	width: 100%;
 	border: 1px solid #000;
 	border-radius: 7px;
@@ -359,129 +411,48 @@ html{
 	font-family: 'Dosis', sans-serif;
 }
 
-.skills-container .skills-block-container:nth-child(4n), .hidden-skills-section .skills-block-container:nth-child(4n){
+.skills-container .skills-block-container:nth-child(4n),
+.hidden-skills-section .skills-block-container:nth-child(4n) {
 	margin-right: 0px;
 }
 
-.hidden-skills-section{
+.hidden-skills-section {
 	display: none;
 	height: 200px;
 }
 
-.skills-block-center{
+.skills-block-center {
 	float: left;
 	width: 25%;
 }
 
 /*All of the differnt skills blck colors*/
-#htmlSkillsBlock .skills-block{
+
+.skills-block {
 	border-color: #6C7A89;
 	color: #fc6454;
 }
 
-#htmlSkillsBlock .skills-block-circle{
+.skills-block-circle {
 	background-color: #fc6454;
 	border-color: #fc6454;
 	color: #fff;
 }
 
-#cssSkillsBlock .skills-block{
-	border-color: #6C7A89;
-	color: #fc6454;
-}
-
-#cssSkillsBlock .skills-block-circle{
-	background-color: #fc6454;
-	border-color: #fc6454;
-	color: #fff;
-}
-
-#jsSkillsBlock .skills-block{
-	border-color: #6C7A89;
-	color: #fc6454;
+#jsSkillsBlock .skills-block {
 	font-size: 30px;
 }
 
-#jsSkillsBlock .skills-block-circle{
-	background-color: #fc6454;
-	border-color: #fc6454;
-	color: #fff;
-}
-
-#javaSkillsBlock .skills-block{
-	border-color: #6C7A89;
-	color: #fc6454;
-}
-
-#javaSkillsBlock .skills-block-circle{
-	background-color: #fc6454;
-	border-color: #fc6454;
-	color: #fff;
-}
-
-#jsfSkillsBlock .skills-block{
-	border-color: #6C7A89;
-	color: #fc6454;
-}
-
-#jsfSkillsBlock .skills-block-circle{
-	background-color: #fc6454;
-	border-color: #fc6454;
-	color: #fff;
-}
-
-#pfSkillsBlock .skills-block{
-	border-color: #6C7A89;
-	color: #fc6454;
+#pfSkillsBlock .skills-block {
 	font-size: 30px;
 }
 
-#pfSkillsBlock .skills-block-circle{
-	background-color: #fc6454;
-	border-color: #fc6454;
-	color: #fff;
-}
-
-#gitSkillsBlock .skills-block{
-	border-color: #6C7A89;
-	color: #fc6454;
-}
-
-#gitSkillsBlock .skills-block-circle{
-	background-color: #fc6454;
-	border-color: #fc6454;
-	color: #fff;
-}
-
-#linuxSkillsBlock .skills-block{
-	border-color: #6C7A89;
-	color: #fc6454;
-}
-
-#linuxSkillsBlock .skills-block-circle{
-	background-color: #fc6454;
-	border-color: #fc6454;
-	color: #fff;
-}
-
-/* Might go back to these
-border-color: #4183D7
-background-color: #03C9A9
-background-color: #F4B350
-background-color: #9A12B3
-background-color: #59ABE3
-background-color: #F27935
-background-color: #DB0A5B
-background-color: #2ECC71
-*/
-
-
-.see-more-skills-line{
+.see-more-skills-line {
 	height: 1px;
 	border-top: 2px solid #c0c2c7;
 }
 
-.see-more-skills-label{
+.see-more-skills-label {
 	width: 90px;
 	height: 45px;
 	border-bottom-left-radius: 47px;
@@ -493,28 +464,28 @@ background-color: #2ECC71
 	padding-top: 6px;
 	font-size: 14px;
 	color: #fc6454;
-	box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.2);
+	box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-.see-more-skills-label:hover{
+.see-more-skills-label:hover {
 	text-decoration: underline;
 	cursor: pointer;
 	cursor: hand;
 }
 
-#quoteSection{
+#quoteSection {
 	height: 100vh;
 	background-image: url('images/Tony-Scialo-7-pano.jpg');
 	min-height: 715px;
 }
 
-.quote-contianer{
+.quote-contianer {
 	width: 600px;
 	padding-top: 130px;
 	margin-left: 5%;
 }
 
-.quote-line{
+.quote-line {
 	display: block;
 	font-size: 36px;
 	color: #fff;
@@ -523,43 +494,43 @@ background-color: #2ECC71
 	padding: 10px 0;
 }
 
-.color-quote{
+.color-quote {
 	color: #fc6454;
 }
 
-.leonard-cohen{
+.leonard-cohen {
 	font-size: 30px;
 	margin-top: 15px;
 }
 
-.peeking-picture{
+.peeking-picture {
 	background-image: url("images/light-coffee-pen-working.jpg");
 	/*width: 70%;*/
 	margin: 0 auto;
 	height: 200px;
 }
 
-.peeking-picture-overlay{
-	background-color: rgba(54,215,183,0.5);
+.peeking-picture-overlay {
+	background-color: rgba(54, 215, 183, 0.5);
 	width: 100%;
 	height: 100%;
 }
 
-.web-design-skills{
+.web-design-skills {
 	height: 600px;
 }
 
-.web-design-skills-container{
+.web-design-skills-container {
 	width: 95%;
 	margin: 0 auto;
 	height: 100%;
 }
 
-.web-design-skills-container div:nth-child(3){
+.web-design-skills-container div:nth-child(3) {
 	border-right: none;
 }
 
-.web-design-skill{
+.web-design-skill {
 	width: 33.3%;
 	color: #6C7A89;
 	font-size: 30px;
@@ -569,66 +540,66 @@ background-color: #2ECC71
 	float: left;
 }
 
-.web-design-skill-icon-container{
+.web-design-skill-icon-container {
 	text-align: center;
 	margin-bottom: 40px;
 }
 
-.web-design-skill-icon{
+.web-design-skill-icon {
 	font-size: 150px;
 	margin-bottom: 40px;
 	color: #fc6454;
 }
 
-.web-design-skill-title{
+.web-design-skill-title {
 	font-weight: 100;
 	text-transform: uppercase;
 	height: 67px;
 }
 
-.web-design-skill-label{
+.web-design-skill-label {
 	font-size: 19px;
 	font-weight: 100;
 	line-height: 200%;
 }
 
-.meet-me-section{
+.meet-me-section {
 	height: 170px;
 	background-color: #fc6454;
 }
 
-.meet-me-section-title{
+.meet-me-section-title {
 	color: #fff;
-  font-size: 63px;
-  font-weight: 100;
-  padding-top: 44px;
-  letter-spacing: 16px;
+	font-size: 63px;
+	font-weight: 100;
+	padding-top: 44px;
+	letter-spacing: 16px;
 	text-align: center;
 }
 
-.down-triangle-section{
+.down-triangle-section {
 	height: 50px;
 	background-color: #fff;
 }
 
-.down-triangle{
+.down-triangle {
 	width: 0;
-  height: 0;
-  border-top: 50px solid #fc6454;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
+	height: 0;
+	border-top: 50px solid #fc6454;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
 	margin: 0 auto;
 }
 
-.my-bio-section{
+.my-bio-section {
 	height: 600px;
 }
 
-.contact-me-section{
+.contact-me-section {
 	height: 500px;
 }
 
-.cool-project{
+.cool-project {
 	letter-spacing: 2px;
 	margin: 60px auto 0 auto;
 	font-size: 22px;
@@ -637,18 +608,18 @@ background-color: #2ECC71
 	padding: 0 20px;
 }
 
-.email-container{
+.email-container {
 	margin-top: 120px;
 	text-align: center;
 	font-size: 30px;
 }
 
-.email-icon-container{
+.email-icon-container {
 	display: inline-block;
 	margin-bottom: 12px;
 }
 
-.em-add{
+.em-add {
 	letter-spacing: 4px;
 	margin: 0 auto;
 	font-size: 20px;
@@ -656,13 +627,13 @@ background-color: #2ECC71
 	text-transform: uppercase;
 }
 
-.share-me{
+.share-me {
 	width: 312px;
 	margin: 120px auto 0 auto;
 	overflow: hidden;
 }
 
-.share-me-title{
+.share-me-title {
 	letter-spacing: 2px;
 	font-size: 16px;
 	margin: 0 auto;
@@ -670,7 +641,7 @@ background-color: #2ECC71
 	text-align: center
 }
 
-.share-me span{
+.share-me span {
 	display: block;
 	float: left;
 	padding: 20px 20px;
@@ -678,28 +649,29 @@ background-color: #2ECC71
 	border-radius: 5px;
 }
 
-.share-me span:hover{
+.share-me span:hover {
 	cursor: pointer;
 	cursor: hand;
 	color: #fff;
 }
 
-.share-me-link{
+.share-me-link {
 	color: #000;
 }
 
-#shareMeTwitter:hover{
+#shareMeTwitter:hover {
 	background-color: #00aced;
 }
 
-#shareMeFacebook:hover{
+#shareMeFacebook:hover {
 	background-color: #3b5998;
 }
-#shareMeGit:hover{
+
+#shareMeGit:hover {
 	background-color: #66B849;
 }
 
-.copyright{
+.copyright {
 	padding-bottom: 5px;
 	font-weight: 100;
 	width: 95px;
@@ -707,7 +679,7 @@ background-color: #2ECC71
 }
 
 
-.split-block-effect{
+.split-block-effect {
 	display: block;
 	text-decoration: none;
 	position: relative;
@@ -719,7 +691,7 @@ background-color: #2ECC71
 }
 
 .split-block-effect:before,
-.split-block-effect:after{
+.split-block-effect:after {
 	bottom: 12%;
 	content: '';
 	width: 59%;
@@ -730,234 +702,239 @@ background-color: #2ECC71
 	/*background-color: #fc6454;*/
 }
 
-.split-block-effect:before{
+.split-block-effect:before {
 	transform: translateY(14px);
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
 
-.split-block-effect:after{
+.split-block-effect:after {
 	left: 40%;
 	transform: translateY(-13px);
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
 
-.split-block-effect:hover:before, .split-block-effect:hover:after{
+.split-block-effect:hover:before,
+.split-block-effect:hover:after {
 	transform: translateY(0px);
 }
 
-@media only screen and (max-width: 1200px){
-	.about-me-container-inner{
+@media only screen and (max-width: 1200px) {
+	.about-me-container-inner {
 		width: 90%;
 	}
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
 
-	.skills-container{
+	.skills-container {
 		margin: 80px 0 0 0;
 	}
 
-	.skills-block-center{
+	.skills-block-center {
 		width: 50%;
 	}
 
-	.skills-block-container{
+	.skills-block-container {
 		width: 280px;
 		margin-bottom: 80px;
 	}
 
-	.skills-block-circle{
+	.skills-block-circle {
 		margin-left: 258px;
 	}
 
-	.about-me-container{
+	.about-me-container {
 		height: auto;
 	}
 
-	.hidden-skills-section{
+	.hidden-skills-section {
 		height: 340px;
 	}
 
-	.show-less{
+	.show-less {
 		margin-bottom: 30px;
 	}
 
-	.quote-contianer{
+	.quote-contianer {
 		width: 350px;
 	}
 
-	.quote-line{
+	.quote-line {
 		font-size: 26px;
 	}
 }
 
-@media only screen and (max-width: 850px){
-	.name-container{
+@media only screen and (max-width: 850px) {
+	.name-container {
 		text-align: left;
 		width: 80%;
 		padding-left: 10%;
 		margin: 0;
 	}
 
-	.my-name-is, .what-i-do{
+	.my-name-is,
+	.what-i-do {
 		font-size: 28px;
 	}
 
-	.name{
+	.name {
 		padding: 10px 0;
 		font-size: 56px;
 	}
 
-	.title-overlay{
-		background-color: rgba(0,0,0,0.6);
+	.title-overlay {
+		background-color: rgba(0, 0, 0, 0.6);
 	}
 }
 
-@media only screen and (max-width: 700px){
-	.menu-button{
+@media only screen and (max-width: 700px) {
+	.menu-button {
 		margin-right: 4px;
 	}
 
-	.name{
+	.name {
 		font-size: 44px;
 	}
 
-	.my-name-is, .what-i-do{
+	.my-name-is,
+	.what-i-do {
 		font-size: 24px;
 	}
 
-	.email-container{
+	.email-container {
 		font-size: 20px;
 	}
 
-	.cool-project{
+	.cool-project {
 		font-size: 18px;
 	}
 
-	.meet-me-section{
+	.meet-me-section {
 		height: 150px;
 	}
 
-	.meet-me-section-title{
+	.meet-me-section-title {
 		font-size: 46px;
 		padding-top: 44px;
 	}
 
-	.skills-block-center{
+	.skills-block-center {
 		width: 100%;
 	}
 
-	.skills-block-container{
+	.skills-block-container {
 		width: 468px;
 	}
 
-	.skills-block-circle{
+	.skills-block-circle {
 		margin-left: 446px;
 	}
 
-	.hidden-skills-section{
+	.hidden-skills-section {
 		height: 686px;
 	}
 
-	.quote-contianer{
+	.quote-contianer {
 		padding-top: 12%;
 	}
 
 }
 
-@media only screen and (max-width: 550px){
-	.name-container{
+@media only screen and (max-width: 550px) {
+	.name-container {
 		width: 90%;
 		pading-top: 20%;
 	}
 
-	.my-name-is, .what-i-do{
+	.my-name-is,
+	.what-i-do {
 		font-size: 20px;
 	}
 
-	.name{
+	.name {
 		font-size: 30px;
 	}
 
-	.adele{
+	.adele {
 		font-size: 50px;
 	}
 
-	.about-me-description{
+	.about-me-description {
 		font-size: 14px;
 	}
 
-	.skills-block-container{
+	.skills-block-container {
 		width: 274px;
 	}
 
-	.skills-block-circle{
+	.skills-block-circle {
 		margin-left: 252px;
 	}
 
-	.skills-block{
+	.skills-block {
 		height: 84px;
 		line-height: 84px;
 		font-size: 40px;
 	}
 
-	.hidden-skills-section{
+	.hidden-skills-section {
 		height: 652px;
 	}
 
-	.name-container{
+	.name-container {
 		padding-top: 30%;
 	}
 
 }
 
-@media only screen and (max-width: 450px){
-	.contact-me-section{
+@media only screen and (max-width: 450px) {
+	.contact-me-section {
 		height: 350px;
 	}
 
-	.email-container, .share-me{
+	.email-container,
+	.share-me {
 		margin-top: 80px;
 	}
 
-	.split-block-effect{
+	.split-block-effect {
 		font-size: 14px;
 	}
 
-	.cool-project-hide-mobile{
+	.cool-project-hide-mobile {
 		display: none;
 	}
 
-	.share-me-title{
+	.share-me-title {
 		font-size: 12px;
 	}
 
-	.meet-me-section{
+	.meet-me-section {
 		height: 120px;
 	}
 
-	.meet-me-section-title{
+	.meet-me-section-title {
 		font-size: 26px;
 	}
 
-	.quote-contianer{
+	.quote-contianer {
 		width: 255px;
 	}
 
-	.quote-line{
+	.quote-line {
 		font-size: 18px;
 	}
 }
 
-@media only screen and (max-width: 350px){
-	.meet-me-section-title{
+@media only screen and (max-width: 350px) {
+	.meet-me-section-title {
 		font-size: 22px;
 		padding-top: 36px;
 	}
 
-	.meet-me-section{
+	.meet-me-section {
 		height: 100px;
 	}
 }
