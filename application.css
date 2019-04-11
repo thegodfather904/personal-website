@@ -438,12 +438,9 @@ html {
 	color: #fff;
 }
 
-#jsSkillsBlock .skills-block {
-	font-size: 30px;
-}
-
+#jsSkillsBlock .skills-block,
 #pfSkillsBlock .skills-block {
-	font-size: 30px;
+	font-size: 44px;
 }
 
 .see-more-skills-line {
