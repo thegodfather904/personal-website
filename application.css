@@ -24,8 +24,7 @@ html {
 
 .title-container {
 	height: 100vh;
-	background-image: url("images/shoes_ocean.jpg");
-	/*width: 70%;*/
+	background-image: url("images/shoes_ocean-small.jpg");
 	margin: 0 auto;
 }
 
@@ -475,7 +474,7 @@ html {
 
 #quoteSection {
 	height: 100vh;
-	background-image: url('images/Tony-Scialo-7-pano.jpg');
+	background-image: url('images/Tony-Scialo-7-pano-small.jpg');
 	min-height: 715px;
 }
 
