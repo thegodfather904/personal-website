@@ -841,7 +841,6 @@ html {
 @media only screen and (max-width: 550px) {
 	.name-container {
 		width: 90%;
-		pading-top: 20%;
 	}
 
 	.my-name-is,
