@@ -471,8 +471,16 @@ html {
 
 #quoteSection {
 	height: 100vh;
-	background-image: url('images/Tony-Scialo-7-pano-small.jpg');
+	background-image: url('images/nyc-1.jpg');
 	min-height: 715px;
+	background-color: #545864;
+}
+
+.headshot img {
+	width: 620px;
+	height: 100%;
+	position: absolute;
+	right: 0;
 }
 
 .quote-contianer {
@@ -497,66 +505,6 @@ html {
 .leonard-cohen {
 	font-size: 30px;
 	margin-top: 15px;
-}
-
-.peeking-picture {
-	background-image: url("images/light-coffee-pen-working.jpg");
-	/*width: 70%;*/
-	margin: 0 auto;
-	height: 200px;
-}
-
-.peeking-picture-overlay {
-	background-color: rgba(54, 215, 183, 0.5);
-	width: 100%;
-	height: 100%;
-}
-
-.web-design-skills {
-	height: 600px;
-}
-
-.web-design-skills-container {
-	width: 95%;
-	margin: 0 auto;
-	height: 100%;
-}
-
-.web-design-skills-container div:nth-child(3) {
-	border-right: none;
-}
-
-.web-design-skill {
-	width: 33.3%;
-	color: #6C7A89;
-	font-size: 30px;
-	border-right: 1px solid #36D7B7;
-	height: 100%;
-	padding: 94px 30px 0 30px;
-	float: left;
-}
-
-.web-design-skill-icon-container {
-	text-align: center;
-	margin-bottom: 40px;
-}
-
-.web-design-skill-icon {
-	font-size: 150px;
-	margin-bottom: 40px;
-	color: #fc6454;
-}
-
-.web-design-skill-title {
-	font-weight: 100;
-	text-transform: uppercase;
-	height: 67px;
-}
-
-.web-design-skill-label {
-	font-size: 19px;
-	font-weight: 100;
-	line-height: 200%;
 }
 
 .meet-me-section {
