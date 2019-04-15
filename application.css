@@ -325,6 +325,8 @@ html {
 	height: 100vh;
 	width: 100%;
 	min-height: 745px;
+	box-shadow: inset 0px -4px 5px 0px rgba(0, 0, 0, 0.3);
+
 }
 
 .about-me-container-inner {
@@ -455,7 +457,7 @@ html {
 	border-bottom-right-radius: 47px;
 	border: 2px solid #c0c2c7;
 	border-top: 2px solid #fff;
-	margin: -2px auto 30px auto;
+	margin: -2px auto 0px auto;
 	text-align: center;
 	padding-top: 6px;
 	font-size: 14px;
@@ -697,16 +699,16 @@ html {
 		height: 340px;
 	}
 
-	.show-less {
-		margin-bottom: 30px;
-	}
-
 	.quote-contianer {
 		width: 350px;
 	}
 
 	.quote-line {
 		font-size: 26px;
+	}
+
+	.headshot {
+		display: none;
 	}
 }
 
